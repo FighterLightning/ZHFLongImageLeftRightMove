@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZHFLongImageLeftRightMove" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gGq-wQ-BAB"/>
+                        <viewControllerLayoutGuide type="bottom" id="cMJ-f4-9Ue"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux0-OB-wKt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="401-p7-PwG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="400"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRJ-Ed-mC2">
+                                                <rect key="frame" x="20" y="177.5" width="334" height="45"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.52156862749999999" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="21a-hc-0wS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="登录">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="gRJ-Ed-mC2" firstAttribute="centerY" secondItem="401-p7-PwG" secondAttribute="centerY" id="KL7-tY-7C5"/>
+                                            <constraint firstItem="gRJ-Ed-mC2" firstAttribute="centerX" secondItem="401-p7-PwG" secondAttribute="centerX" id="YBg-Mi-lyW"/>
+                                            <constraint firstAttribute="trailing" secondItem="gRJ-Ed-mC2" secondAttribute="trailing" constant="20" id="bOt-by-2p8"/>
+                                            <constraint firstItem="gRJ-Ed-mC2" firstAttribute="leading" secondItem="401-p7-PwG" secondAttribute="leading" constant="20" id="ewT-dS-o4m"/>
+                                            <constraint firstAttribute="height" constant="400" id="wWk-UY-Rco"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="401-p7-PwG" secondAttribute="trailing" id="2lk-fx-6ub"/>
+                                    <constraint firstItem="401-p7-PwG" firstAttribute="leading" secondItem="ux0-OB-wKt" secondAttribute="leading" id="Esl-gU-bwr"/>
+                                    <constraint firstAttribute="bottom" secondItem="401-p7-PwG" secondAttribute="bottom" id="U2e-Gi-tPS"/>
+                                    <constraint firstItem="401-p7-PwG" firstAttribute="top" secondItem="ux0-OB-wKt" secondAttribute="top" id="j2m-S0-Eqv"/>
+                                    <constraint firstItem="401-p7-PwG" firstAttribute="centerX" secondItem="ux0-OB-wKt" secondAttribute="centerX" id="q2h-e3-Lgn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ux0-OB-wKt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G3X-xn-7N0"/>
+                            <constraint firstItem="ux0-OB-wKt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cYh-o2-3pv"/>
+                            <constraint firstAttribute="bottom" secondItem="ux0-OB-wKt" secondAttribute="bottom" id="jCC-ff-1qL"/>
+                            <constraint firstAttribute="trailing" secondItem="ux0-OB-wKt" secondAttribute="trailing" id="ttg-08-3J8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundView" destination="401-p7-PwG" id="opd-xw-uC5"/>
+                        <outlet property="backGroundViewH" destination="wWk-UY-Rco" id="RhM-tX-Okv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
